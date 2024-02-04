@@ -1,0 +1,17 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "packageRules": [
+        {
+            "matchDatasources": [
+                "galaxy-collection"
+            ],
+            "automerge": true,
+            "automergeType": "branch",
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ],
+            "ignoreTests": true
+        }
+    ]
+}
