@@ -1,70 +1,78 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "packageRules": [
-      {
-          "matchUpdateTypes": [
-              "major"
-          ],
-          "labels": [
-              "dep/major"
-          ]
-      },
-      {
-          "matchUpdateTypes": [
-              "minor"
-          ],
-          "labels": [
-              "dep/minor"
-          ]
-      },
-      {
-          "matchUpdateTypes": [
-              "patch"
-          ],
-          "labels": [
-              "dep/patch"
-          ]
-      },
-      {
-          "matchDatasources": [
-              "helm"
-          ],
-          "addLabels": [
-              "renovate/helm"
-          ]
-      },
-      {
-          "matchDatasources": [
-              "docker"
-          ],
-          "addLabels": [
-              "renovate/container"
-          ]
-      },
-      {
-          "matchDatasources": [
-              "galaxy",
-              "galaxy-collection"
-          ],
-          "addLabels": [
-              "renovate/ansible"
-          ]
-      },
-      {
-          "matchDatasources": [
-              "terraform-provider"
-          ],
-          "addLabels": [
-              "renovate/terraform"
-          ]
-      },
-      {
-          "matchManagers": [
-              "github-actions"
-          ],
-          "addLabels": [
-              "renovate/github-action"
-          ]
-      }
-  ]
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "packageRules": [
+        {
+            "matchUpdateTypes": [
+                "major"
+            ],
+            "labels": [
+                "dep/major"
+            ]
+        },
+        {
+            "matchUpdateTypes": [
+                "minor"
+            ],
+            "labels": [
+                "dep/minor"
+            ]
+        },
+        {
+            "matchUpdateTypes": [
+                "patch"
+            ],
+            "labels": [
+                "dep/patch"
+            ]
+        },
+        {
+            "matchUpdateTypes": [
+                "digest"
+            ],
+            "labels": [
+                "type/digest"
+            ]
+        },
+        {
+            "matchDatasources": [
+                "helm"
+            ],
+            "addLabels": [
+                "renovate/helm"
+            ]
+        },
+        {
+            "matchDatasources": [
+                "docker"
+            ],
+            "addLabels": [
+                "renovate/container"
+            ]
+        },
+        {
+            "matchDatasources": [
+                "galaxy",
+                "galaxy-collection"
+            ],
+            "addLabels": [
+                "renovate/ansible"
+            ]
+        },
+        {
+            "matchDatasources": [
+                "terraform-provider"
+            ],
+            "addLabels": [
+                "renovate/terraform"
+            ]
+        },
+        {
+            "matchManagers": [
+                "github-actions"
+            ],
+            "addLabels": [
+                "renovate/github-action"
+            ]
+        }
+    ]
 }
